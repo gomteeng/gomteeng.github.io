@@ -1,13 +1,21 @@
-let x = Math.floor(Math.random() * 6) + 1;
-let y = Math.floor(Math.random() * 6) + 1;
-let z = Math.floor(Math.random() * 6) + 1;
+let grade = 'F';
 
-document.getElementById('rollButton').onclick = function () {
-    x = Math.floor(Math.random() * 6) + 1;
-    y = Math.floor(Math.random() * 6) + 1;
-    z = Math.floor(Math.random() * 6) + 1;
-
-    document.getElementById('xLabel').innerHTML = x;
-    document.getElementById('yLabel').innerHTML = y;
-    document.getElementById('zLabel').innerHTML = z;
+switch (grade) {
+    case 'A':
+        console.log(`${grade}임`);
+        break;
+    case 'B':
+        console.log(`${grade}임`);
+        break;
+    case 'C':
+        console.log(`${grade}임`);
+        break;
+    case 'D':
+        console.log(`${grade}임`);
+        break;
+    case 'F':
+        console.log(`${grade}임`);
+        break;
+    default:
+        console.log(`${grade}는 학년이 아닙니다;;;`);
 }
